@@ -38,7 +38,7 @@ long CalcCount(int[,] matrix)
     return count;
 }
  ```
- #### Answer:
+#### Answer:
 * Runs in `O(n`<sup>`2`</sup>`)` where `n` is the size of the array
 * The number of elementary steps is `~ n*(n/2)*m`
 
