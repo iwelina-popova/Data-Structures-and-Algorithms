@@ -20,7 +20,7 @@
   }
   ```
 #### Answer:
-* Runs in `O(n`<sup>`2`</sup>`)` where `n` is the size of the array
+* Runs in `O(n`<sup>2</sup>`)` where `n` is the size of the array
 * The number of elementary steps is `~n * n`
 
 ### What is the expected running time of the following C# code?
