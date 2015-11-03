@@ -20,7 +20,7 @@
             Sequence: 5 → 7 → 8 → 16
             */
 
-            FindShortestSequenceOfOperations(5, 16);
+            FindShortestSequenceOfOperations(5, 17);
         }
 
         private static void FindShortestSequenceOfOperations(int firstNumber, int lastNumber)
@@ -37,10 +37,15 @@
 
             while (true)
             {
-                if (currentNumber / 2 >= firstNumber)
+                if (currentNumber / 2 >= firstNumber && currentNumber % 2 == 0)
                 {
                     currentNumber /= 2;
                     operations.Enqueue("/ 2");
+                }
+                else if (currentNumber / 2 >= firstNumber && currentNumber % 2 == 1)
+                {
+                    currentNumber -= 1;
+                    operations.Enqueue("- 1");
                 }
                 else if (currentNumber - 2 >= firstNumber)
                 {
